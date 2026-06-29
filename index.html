@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnaDu Confeitaria — Giane</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">AnaDu Confeitaria</a>
+    <ul class="nav-links">
+      <li><a href="#historia">História</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#ebook">Ebook</a></li>
+      <li><a href="#embreve">Em breve</a></li>
+      <li><a href="#contato" class="nav-cta">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-eyebrow">✦ Confeiteira Giane</span>
+        <h1 class="hero-title">
+          AnaDu Confeitaria<br><em>Giane</em>
+        </h1>
+        <p class="hero-subtitle">
+          Confeitaria AnaDu, feita pela Giane, com espaço para apresentar sua história, seus produtos e seus pedidos.
+        </p>
+        <div class="hero-btns">
+          <a href="#ebook" class="btn-primary">Ver Ebook</a>
+          <a href="#historia" class="btn-secondary">Conhecer a Giane</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-frame">
+          <!-- Troque pelo src da foto real da confeiteira -->
+          <div class="img-placeholder" style="background: linear-gradient(135deg,#C9747A,#9B3E44); min-height:380px;">
+            <span class="ph-icon">Giane</span>
+            <span>Foto principal</span>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <strong>+00</strong>
+          Texto de selo
+        </div>
+        <div class="hero-stats">
+          <div class="stat-pill"><strong>000+</strong><span>Indicador 1</span></div>
+          <div class="stat-pill"><strong>000+</strong><span>Indicador 2</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon"><span class="ribbon-icon">✦ &nbsp; Texto da faixa &nbsp; ✦</span></div>
+
+  <!-- HISTÓRIA -->
+  <section id="historia">
+    <div class="section-inner">
+      <div class="historia-grid">
+        <div class="historia-img-wrap reveal">
+          <!-- Troque pelo src de uma foto de bastidores -->
+          <div class="img-placeholder" style="background: linear-gradient(160deg,#D4A847 0%,#C9747A 100%); border-radius:1rem; aspect-ratio:4/5; min-height:360px;">
+            <span class="ph-icon">Bastidores</span>
+            <span>Foto de Bastidores</span>
+          </div>
+          <div class="historia-img-deco"></div>
+        </div>
+        <div class="historia-text reveal">
+          <span class="section-eyebrow">✦ História da AnaDu</span>
+          <h2 class="section-title">A história da <br><em>Giane</em></h2>
+          <div class="historia-body">
+            <p>Parágrafo 1 da história. Escreva aqui o texto explicativo da sua marca ou da sua trajetória.</p>
+            <p>Parágrafo 2 da história. Você pode adicionar detalhes, origem, experiência e diferenciais.</p>
+            <blockquote class="historia-quote">
+              "Frase de destaque ou citação da seção."
+            </blockquote>
+            <p>Parágrafo final da história. Escreva aqui uma chamada para o próximo passo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon"><span class="ribbon-icon">✦ &nbsp; Um pouco do que já foi criado &nbsp; ✦</span></div>
+
+  <!-- GALERIA -->
+  <section id="galeria">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ Galeria da AnaDu</span>
+        <h2 class="section-title">Galeria <em>de produções</em></h2>
+        <p class="section-desc">Espaço para mostrar os trabalhos, bolos e encomendas da Giane.</p>
+      </div>
+      <div class="galeria-grid reveal">
+        <div class="galeria-item" onclick="openLightbox(this)">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#C9747A,#9B3E44);min-height:400px;">
+            <span class="ph-icon">Imagem 1</span><span>Legenda 1</span>
+          </div>
+          <div class="galeria-overlay"><span>Título da imagem 1</span></div>
+        </div>
+        <div class="galeria-item" onclick="openLightbox(this)">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#D4A847,#C9747A);min-height:180px;">
+            <span class="ph-icon">Imagem 2</span><span>Legenda 2</span>
+          </div>
+          <div class="galeria-overlay"><span>Título da imagem 2</span></div>
+        </div>
+        <div class="galeria-item" onclick="openLightbox(this)">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#E8A5A9,#C9747A);min-height:180px;">
+            <span class="ph-icon">Imagem 3</span><span>Legenda 3</span>
+          </div>
+          <div class="galeria-overlay"><span>Título da imagem 3</span></div>
+        </div>
+        <div class="galeria-item" onclick="openLightbox(this)">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#9B3E44,#D4A847);min-height:180px;">
+            <span class="ph-icon">Imagem 4</span><span>Legenda 4</span>
+          </div>
+          <div class="galeria-overlay"><span>Título da imagem 4</span></div>
+        </div>
+        <div class="galeria-item" onclick="openLightbox(this)">
+          <div class="img-placeholder" style="background:linear-gradient(135deg,#3D1F0D,#C9747A);min-height:180px;">
+            <span class="ph-icon">Imagem 5</span><span>Legenda 5</span>
+          </div>
+          <div class="galeria-overlay"><span>Título da imagem 5</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIBBON -->
+  <div class="ribbon" style="background:var(--dark);"><span class="ribbon-icon" style="color:var(--gold);">✦ &nbsp; Texto da faixa 2 &nbsp; ✦</span></div>
+
+  <!-- EBOOK -->
+  <section id="ebook">
+    <div class="ebook-inner">
+      <div class="ebook-cover reveal">
+        <div class="ebook-mockup">
+          <div class="ebook-mockup-icon">Capa</div>
+          <h3>Título do ebook</h3>
+          <p>Giane</p>
+        </div>
+        <span class="ebook-gold-badge">✦ Selo ou plataforma</span>
+      </div>
+      <div class="ebook-text reveal">
+        <span class="section-eyebrow">✦ Ebook da Giane</span>
+        <h2 class="section-title">Ebook <br><em>da AnaDu</em></h2>
+        <p class="ebook-desc">Texto de apresentação do ebook, com benefícios, conteúdo e chamada para compra.</p>
+        <div class="ebook-features">
+          <div class="ebook-feat"><div class="ebook-feat-icon">1</div><span>Benefício ou item 1</span></div>
+          <div class="ebook-feat"><div class="ebook-feat-icon">2</div><span>Benefício ou item 2</span></div>
+          <div class="ebook-feat"><div class="ebook-feat-icon">3</div><span>Benefício ou item 3</span></div>
+          <div class="ebook-feat"><div class="ebook-feat-icon">4</div><span>Benefício ou item 4</span></div>
+        </div>
+        <div class="ebook-cta-wrap">
+          <a href="https://hotmart.com" target="_blank" class="btn-hotmart">Botão de compra</a>
+          <span class="ebook-price-note">Texto de apoio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EM BREVE -->
+  <section id="embreve">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ Em breve</span>
+        <h2 class="section-title">Mais novidades <em>em breve</em></h2>
+        <p class="section-desc">Espaço para cursos, aulas, novidades e outros produtos da AnaDu.</p>
+      </div>
+      <div class="embreve-grid">
+        <div class="embreve-card reveal">
+          <span class="embreve-badge">Tag</span>
+          <span class="embreve-icon">Item 1</span>
+          <h3>Título 1</h3>
+          <p>Descrição 1.</p>
+        </div>
+        <div class="embreve-card reveal">
+          <span class="embreve-badge">Tag</span>
+          <span class="embreve-icon">Item 2</span>
+          <h3>Título 2</h3>
+          <p>Descrição 2.</p>
+        </div>
+        <div class="embreve-card reveal">
+          <span class="embreve-badge">Tag</span>
+          <span class="embreve-icon">Item 3</span>
+          <h3>Título 3</h3>
+          <p>Descrição 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ Depoimentos</span>
+        <h2 class="section-title">Depoimentos de quem <em>aprendeu com a Giane</em></h2>
+      </div>
+      <div class="depo-grid">
+        <div class="depo-card reveal">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">"Escreva aqui o primeiro depoimento."</p>
+          <div class="depo-author">
+            <div class="depo-avatar">M</div>
+            <div><div class="depo-name">Nome</div><div class="depo-role">Cargo ou descrição</div></div>
+          </div>
+        </div>
+        <div class="depo-card reveal">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">"Escreva aqui o segundo depoimento."</p>
+          <div class="depo-author">
+            <div class="depo-avatar">J</div>
+            <div><div class="depo-name">Nome</div><div class="depo-role">Cargo ou descrição</div></div>
+          </div>
+        </div>
+        <div class="depo-card reveal">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">"Escreva aqui o terceiro depoimento."</p>
+          <div class="depo-author">
+            <div class="depo-avatar">P</div>
+            <div><div class="depo-name">Nome</div><div class="depo-role">Cargo ou descrição</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final">
+    <div class="section-inner">
+      <span class="section-eyebrow">✦ Fale com a AnaDu</span>
+      <h2 class="section-title">Entre em contato <em>e faça sua encomenda</em></h2>
+      <p class="section-desc">Use esta área para direcionar a cliente ao WhatsApp, Instagram e iFood.</p>
+      <div class="cta-final-btns">
+        <a href="https://hotmart.com" target="_blank" class="btn-white">Botão final</a>
+        <a href="#historia" class="btn-outline-white">Botão secundário</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✦ Contato</span>
+        <h2 class="section-title">Entre em <em>contato</em> e faça sua encomenda</h2>
+        <p class="section-desc">Coloque aqui os canais de atendimento para WhatsApp, Instagram e pedidos pelo iFood.</p>
+      </div>
+      <div class="contato-grid reveal">
+        <div class="contato-card">
+          <span class="contato-tag">WhatsApp</span>
+          <h3>Fale direto no WhatsApp</h3>
+          <p>Espaço para mensagem curta sobre atendimento, orçamentos e encomendas.</p>
+          <a class="contato-link" href="https://wa.me/5500000000000" target="_blank">Abrir WhatsApp</a>
+        </div>
+        <div class="contato-card">
+          <span class="contato-tag">Instagram</span>
+          <h3>Veja novidades no Instagram</h3>
+          <p>Espaço para divulgar fotos, bastidores e novidades da confeitaria.</p>
+          <a class="contato-link alt" href="https://instagram.com" target="_blank">Abrir Instagram</a>
+        </div>
+        <div class="contato-card">
+          <span class="contato-tag">iFood</span>
+          <h3>Faça encomendas pelo iFood</h3>
+          <p>Espaço para pedidos rápidos, opções do cardápio e entregas.</p>
+          <a class="contato-link" href="https://www.ifood.com.br" target="_blank">Abrir iFood</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 AnaDu Confeitaria · Todos os direitos reservados · <a href="https://hotmart.com" target="_blank">Link</a></p>
+    <p style="margin-top:0.4rem; font-size:0.7rem;">Assinatura: Murilo Quitzau</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    function openLightbox(item) {
+      const img = item.querySelector('img');
+      const lb  = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      if (img) {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lb.classList.add('open');
+      }
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        const offset = 70;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
